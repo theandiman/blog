@@ -1,0 +1,41 @@
+# Site settings
+title: Andy's Engineering Blog
+description: >- # this means to ignore newlines until "baseurl:"
+  Software engineering insights, cloud architecture, and technical deep dives.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://theandiman.github.io" # the base hostname & protocol for your site
+twitter_username: theandiman
+github_username: theandiman
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Minima settings
+minima:
+  skin: dark
+  date_format: "%b %-d, %Y"
+  
+# Show excerpts on homepage
+show_excerpts: true
+
+# Pagination
+paginate: 10
+paginate_path: "/page:num/"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
